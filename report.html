@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset='utf-8'>
+
+	<title>
+		The Title
+	</title>
+
+	<style>
+		/*針對標題做設定*/
+		#header{background:repeating-linear-gradient(45deg,#669999,#666699);font-size:3em;text-align:center;width:100%;}
+
+		/*針對導覽列做設定*/
+		#nav{display:inline;position:sticky;top:0;width:100%;height:100px;background-color:#000000;}
+		a h3{display:inline-block;position:relative;color:#ffffff;text-align:center;width:22.5%}
+
+		/*針對內容做設定*/
+		.flex-cont{display:flex;width:100vw;justify-content:center;margin:5px;}
+
+
+		#nor{display:flex;height:200px;background-color:#800000;color:#ffffff;}
+		#rever{display:flex;flex-direction:row-reverse;height:200px;background-color:#8800cc;color:#ffffff;}
+
+		.flex-cont > div {flex-basis:50%;text-align:center;justify-content:space-between;}
+		div p{padding:1em;}
+
+	</style>
+</head>
+
+<body style='background-color:#94b8b8;'>
+	<div id='header'>
+		<p>Title</p>
+	</div>
+
+	<div id='nav'>
+		<a href='#1'><h3>Article 1</h3></a>
+		<a href='#2'><h3>Article 2</h3></a>
+		<a href='#3'><h3>Article 3</h3></a>
+		<a href='#4'><h3>Article 4</h3></a>
+	</div>
+
+	<div id='1' class='flex-cont'>
+		<div id='nor'>
+			<div>
+				<p>Article 1</p>
+			</div>
+
+			<div>
+				<p>Picture 1</p>
+			</div>
+		</div>
+	</div>
+
+	<div id='2' class='flex-cont'>
+		<div id='rever'>
+			<div>
+				<p>Article 2</p>
+			</div>
+
+			<div>
+				<p>Picture 2</p>
+			</div>
+		</div>
+	</div>
+
+	<div id='3' class='flex-cont'>
+		<div id='nor'>
+			<div>
+				<p>Article 3</p>
+			</div>
+
+			<div>
+				<p>Picture 1</p>
+			</div>
+		</div>
+	</div>
+
+	<div id='4' class='flex-cont'>
+		<div id='rever'>
+			<div>
+				<p>Article 4</p>
+			</div>
+
+			<div>
+				<p>Picture 4</p>
+			</div>
+		</div>
+	</div>
+</body></html>
