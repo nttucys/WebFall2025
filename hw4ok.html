@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charsrt='utf-8'>
+	<article>JavaScript練習</article>
+</head>
+
+<body>
+	<h1 id='A1' style='color:red;'>The practice for JavaScript.</h1>
+	<button type='button' id='B1' style='display:inline;' onclick= "Content1()">Click this , I'll translate it to Chinese.</button>
+	<button type='button' id='B2' style='display:none;'onclick="Content2()">點此翻譯為英文。</button>
+	<button type='button' id='B3' style='display:inline;'onclick='Content3()'>Click to change the color of sentence.</button>
+
+	<script>
+		function Content1(){document.getElementById('A1').innerHTML= 'Javacript 練習。';document.getElementById('B1').style.display="none";document.getElementById('B2').style.display='inline';document.getElementById('B3').innerHTML='更換文字顏色'}
+
+		function Content2(){document.getElementById('A1').innerHTML= 'The practice for JavaScript.';document.getElementById('B2').style.display="none";document.getElementById('B1').style.display='inline';document.getElementById('B3').innerHTML='Click to chhange the color of sentence.'}
+
+		function Content3(){alert('發生錯誤，請稍後再試。')}
+	</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
