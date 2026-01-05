@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>期末報告</title>
+ <style>
+  *{text-align:center;}
+
+  #buttons{width:100vw; height:50vh;}
+
+  #no{
+  	position: absolute;
+  	top:50%;
+  	left:50%;
+  	transform: translate(-50%,-50%);
+  	background-color: hotpink;
+  	color:black;
+  	border:none;
+  	transition:top 0.3s,left 0.3s;
+    z-index: 1;
+  }
+
+  #yes{
+  	position: absolute;
+  	top:50%;
+  	right:50%;
+  	transform: translate(50%,50%);
+  	background-color: black;
+  	color:white;
+  	border:none;
+  	transition:top 0.3s,left 0.3s;
+  }
+
+ </style>
+ </head>
+
+
+<body>
+ <div style="background-color:black; color:white;">
+  <h1>期末報告</h1>
+ </div>
+  <p>請問老師，我這科會過嗎？</p>
+ <div id="buttons">
+  <button type="button" id="no">會阿，會把你當掉 =w= </button>
+  <button type="button" id="yes" class="button">會阿，會過啊。</button>
+
+  <script>
+  	const button = document.getElementById('no');
+  	button.addEventListener('mouseover', ()=>{
+  		const randomTop = Math.random() * (window.innerHeight - button.offsetHeight);
+  		const randomLeft = Math.random() * (window.innerWeight - button.offsetWidth);
+
+  		button.style.top = `${randomTop}px`
+  		button.style.left = `${randomLeft}px`
+  	});
+
+  </script>
+</body>
+</html>
